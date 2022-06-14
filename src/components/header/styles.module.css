@@ -10,11 +10,11 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
-  &_right {
-    display: flex;
-    flex-direction: row-reverse;
-    span {
-      color:var(--text-primary)
-    }
-  }
 }
+.icon_bar_right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.icon_bar_right span {
+  color: var(--text-primary);
+}/*# sourceMappingURL=styles.module.css.map */
