@@ -1,0 +1,39 @@
+@import "css-reset";
+@import "utils";
+@import "poppins";
+@import "font-sizes";
+
+:root {
+  --primary-font: Poppins;
+  --primary: #26DEC8;
+  --secondary: #2563EB;
+  --background: #A74343;
+  --text--primary: #FFFFFF;
+  --text--secondary: #000000;
+  --like--icon: #FF0000;
+  --product--color--selected: #DFD9D9;
+  --product--color--primary: #2C6363;
+  --product--color--secondary: #E2B190;
+
+}
+
+img {
+  user-select: none;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  direction: ltr;
+}
