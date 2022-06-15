@@ -6,9 +6,8 @@ const HomeComponent = () => {
     <div className={styles.container}>
       <picture className={styles.img_background}>
       <HeaderComponent />
-        <source media="(min-width:1024px)" srcSet="img_pink_flowers.jpg" />
+        <source media="(min-width:1024px)" srcSet="" />
         <img src={require("../../assets/images/img.png")} alt="Flowers" />
-
       </picture>
     </div>
   );

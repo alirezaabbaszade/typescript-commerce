@@ -9,12 +9,22 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  margin-top: 1rem;
+
   &_right {
     display: flex;
     flex-direction: row-reverse;
-    span {
-      color:var(--text-primary)
+    span:first-child {
+      transform: rotate(90deg);
+      padding-left:.5rem;
+
+    }
+
+  }
+  &_left{
+    p{
+      font-size: 1.5rem;
     }
   }
 }
