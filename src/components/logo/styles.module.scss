@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  top: 40%;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+
+  img {
+    width: 60%;
+    height: 100%;
+  }
+}

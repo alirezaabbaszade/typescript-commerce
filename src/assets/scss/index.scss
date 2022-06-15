@@ -11,9 +11,11 @@
   --text--primary: #FFFFFF;
   --text--secondary: #000000;
   --like--icon: #FF0000;
-  --product--color--selected: #DFD9D9;
-  --product--color--primary: #2C6363;
-  --product--color--secondary: #E2B190;
+  --product--selected: #DFD9D9;
+  --product--primary: #2C6363;
+  --product--secondary: #E2B190;
+  --homepage--buttons: #D9D9D9;
+  --radius: 10px;
 
 }
 
@@ -22,7 +24,7 @@ img {
 }
 
 body {
-  background-color: var(--background);
+  //background-color: var(--background);
   font-family: var(--primary-font);
   color: var(--text--primary)
 }
