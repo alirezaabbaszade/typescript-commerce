@@ -1,9 +1,10 @@
 import React from 'react';
 import StoreComponent from "../components/store";
-
-const Store = () => {
+type Props = {
+}
+const Store = (props: Props) => {
     return (
-        <StoreComponent/>
+        <StoreComponent />
     );
 };
 
