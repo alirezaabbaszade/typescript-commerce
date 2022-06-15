@@ -7,7 +7,7 @@
   --primary-font: Poppins;
   --primary: #26DEC8;
   --secondary: #2563EB;
-  --background: #A74343;
+  --background: rgba(167, 67, 67, 86%);
   --text--primary: #FFFFFF;
   --text--secondary: #000000;
   --like--icon: #FF0000;
@@ -26,7 +26,7 @@ img {
 }
 
 body {
-  //background-color: var(--background);
+  background-color: var(--background);
   font-family: var(--primary-font);
   color: var(--text--primary)
 }
