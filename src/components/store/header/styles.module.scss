@@ -10,12 +10,14 @@
     display: flex;
 
   }
-  &_center{
+
+  &_center {
     display: flex;
     justify-content: center;
-   img{
+
+    img {
       width: 35%;
 
-   }
+    }
   }
 }
