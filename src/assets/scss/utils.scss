@@ -26,36 +26,9 @@
   @media (min-width: 1800px) { @content; }
 }
 
-.container {
-  margin: 0 auto;
-  @include for-desktop-up{
-    width: 95%;
-  }
-  @include for-desktop-down {
-    width: 95%;
-  }
-}
-
-.block-container {
-  padding: 0 var(--container-margin) 1rem var(--container-margin);
-}
-
-.d-none {
-  display: none;
-}
-
-.block {
-  padding: 1rem;
-}
-
-.full-container {
-  height: 100vh;
+.form_container {
   width: 100%;
-  display: grid;
-  place-items:center;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
 }

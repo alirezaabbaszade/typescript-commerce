@@ -8,8 +8,8 @@ const Buttons = (props: Props) => {
 
     return (
         <div className={styles.buttons}>
-            <button onClick={props.navigateSignUp}>Sign up</button>
-            <button onClick={props.navigateLogin}>Create Account</button>
+            <button onClick={props.navigateLogin}>Sign In</button>
+            <button onClick={props.navigateSignUp}>Create Account</button>
         </div>
     );
 };
