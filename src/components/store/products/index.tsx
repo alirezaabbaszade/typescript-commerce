@@ -1,66 +1,28 @@
 import React from 'react';
+import {Global} from "../../../libs/responses";
 import styles from './styles.module.scss'
+import ImageComponent from "../../ui/ImageCompontnt";
 
 type Props = {
-
+    products: Array<Global.Products>
 }
-
-const ProductsComponent = (props: Props) => {
+const ProductsComponent = ({products}: Props) => {
+    console.log(products)
     return (
-        <>
-
-            <div className={styles.wrapper}>
-                <div className={styles.container}>
-                    <div className={styles.product_right}>
-                        <img src={require("../../../assets/images/product-image.png")} alt=""/>
-                        <div className={styles.product_right_desc}>
-                            <p>$70</p>
-                            <p>Monroe Top</p>
+        <section className={styles.productsContainer}>
+            {products?.map((product) => {
+                return (
+                    <div className={styles.product}>
+                        <ImageComponent src={product?.image}/>
+                        <div>
+                            <p>{product?.title}</p>
+                            <p>{product?.price}</p>
                         </div>
                     </div>
-                    <div className={styles.product_left}>
-                        <img src={require("../../../assets/images/product-image.png")} alt=""/>
-                        <div className={styles.product_left_desc}>
-                            <p>$70</p>
-                            <p>Monroe Top</p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.container}>
-                    <div className={styles.product_right}>
-                        <img src={require("../../../assets/images/product-image.png")} alt=""/>
-                        <div className={styles.product_right_desc}>
-                            <p>$70</p>
-                            <p>Monroe Top</p>
-                        </div>
-                    </div>
-                    <div className={styles.product_left}>
-                        <img src={require("../../../assets/images/product-image.png")} alt=""/>
-                        <div className={styles.product_left_desc}>
-                            <p>$70</p>
-                            <p>Monroe Top</p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.container}>
-                    <div className={styles.product_right}>
-                        <img src={require("../../../assets/images/product-image.png")} alt=""/>
-                        <div className={styles.product_right_desc}>
-                            <p>$70</p>
-                            <p>Monroe Top</p>
-                        </div>
-                    </div>
-                    <div className={styles.product_left}>
-                        <img src={require("../../../assets/images/product-image.png")} alt=""/>
-                        <div className={styles.product_left_desc}>
-                            <p>$70</p>
-                            <p>Monroe Top</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
+                )
+            })}
+        </section>
     );
-};
+}
 
 export default ProductsComponent;

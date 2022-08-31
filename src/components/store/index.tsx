@@ -4,9 +4,10 @@ import HeaderComponent from "./header";
 import MenuComponent from "./menu";
 import SliderComponent from "./slider";
 import ProductsComponent from "./products";
+import {Global} from "../../libs/responses";
 
 type Props = {
-
+    products:Array<Global.Products>
 }
 const StoreComponent = (props: Props) => {
     return (
@@ -14,7 +15,7 @@ const StoreComponent = (props: Props) => {
             <HeaderComponent/>
             <MenuComponent/>
             <SliderComponent/>
-            <ProductsComponent />
+            <ProductsComponent products={props?.products}/>
         </div>
     );
 };

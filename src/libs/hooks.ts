@@ -9,7 +9,6 @@ export default function useApi(url: any) {
                 return res.json();
             })
             .then(json => {
-                console.log(json)
                 setIsLoading(false);
                 setData(json)
             })
